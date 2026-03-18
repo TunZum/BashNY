@@ -1,0 +1,12 @@
+CREATE TABLE HeroStats (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    HeroName NVARCHAR(50),
+    CurrentFloor INT,
+    BaseDamage INT,
+    BaseHealth INT,
+    Experience INT
+);
+
+-- Добавим тебя в базу
+INSERT INTO HeroStats (HeroName, CurrentFloor, BaseDamage, BaseHealth, Experience) 
+VALUES ('Саша', 1, 5, 25, 0);
